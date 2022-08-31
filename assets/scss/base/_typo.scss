@@ -1,3 +1,4 @@
+// font
 @font-face {
   font-family: 'Rl unno';
   src: url('../fonts/620f81bdb9818ebf45d1bc13_RL-Unno-Regular.woff2') format('woff2');
@@ -11,4 +12,19 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #f9f9f9;
 }

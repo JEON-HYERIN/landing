@@ -1,0 +1,35 @@
+// media query
+@mixin desktop {
+  // 1920px
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  // 991px
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-small {
+  // 768px
+  @media (min-width: $tablet-small) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  // 767px
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  // 479px
+  @media (max-width: $mobile-small) {
+    @content;
+  }
+}
