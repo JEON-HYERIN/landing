@@ -137,7 +137,7 @@
     }
 
     &.pc {
-      display: flex;
+      display: block;
 
       @include mobile-small {
         display: none;
@@ -463,27 +463,6 @@
   }
 }
 
-.load-overlay {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 300;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../images/bg/overlay.gif");
-  background-position: 0 0;
-  background-size: 250px;
-  opacity: 0.06;
-  pointer-events: none;
-
-  @include mobile-small {
-    opacity: 0.02;
-  }
-}
-
 // custom-cursor
 .custom-cursor {
   position: fixed;
@@ -493,12 +472,33 @@
   border-radius: 50%;
   background: #f9f9f9;
   mix-blend-mode: difference;
-  pointer-events: none;
   opacity: 0;
   visibility: visible;
+  pointer-events: none;
   z-index: 100;
 
   @media (max-width: 1023px) {
     visibility: hidden;
+  }
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg/overlay.gif");
+  background-position: 0 0;
+  background-size: 250px;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 300;
+
+  @include mobile-small {
+    opacity: 0.02;
   }
 }

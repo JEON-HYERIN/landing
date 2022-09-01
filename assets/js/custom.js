@@ -26,13 +26,13 @@ $(function(){
   $('.link-gnb').click(function(){
     const dataMenu = $(this).parent().data('menu');
     const scrollTop = $('#' + dataMenu).offset().top;
-    $('.link-gnb').removeClass('selected');
-    $(this).addClass('selected');
+    // $('.link-gnb').removeClass('selected');
+    // $(this).addClass('selected');
     $('html, body').animate({scrollTop: scrollTop}, 500);
   });
 
   // custom-cursor
-  const mouseCursor = document.querySelector('#custom-cursor');
+  const mouseCursor = document.querySelector('.custom-cursor');
 
   window.addEventListener('mousemove', function(e){
     mouseCursor.style.left = e.clientX + 'px';
