@@ -25,37 +25,133 @@
   <div id="wrapper">
     <!-- HEADER -->
     <header id="header">
-      <div class="logo-area">
-        <h1 class="logo"><a href="#">JEONHYERIN</a></h1>
+      <div class="inner">
+        <div class="logo-area">
+          <h1 class="logo"><a href="#"><i class="ico-logo"></i>JEONHYERIN</a></h1>
+        </div>
+        <nav id="gnb">
+          <ul class="gnb-list">
+            <li class="gnb-item" data-menu="about"><a href="#" class="link-gnb">about</a></li>
+            <li class="gnb-item" data-menu="work"><a href="#" class="link-gnb">work</a></li>
+            <li class="gnb-item" data-menu="footer"><a href="#" class="link-gnb">contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav id="gnb">
-        <ul class="gnb-list">
-          <li class="gnb-item" data-menu="work"><a href="#" class="link-gnb">work</a></li>
-          <li class="gnb-item" data-menu="about"><a href="#" class="link-gnb">about</a></li>
-          <li class="gnb-item" data-menu="contact"><a href="#" class="link-gnb">contact</a></li>
-        </ul>
-      </nav>
     </header>
     <!-- MAIN -->
     <main id="main">
-      <!-- intro -->
-      <section class="sc-intro">
-        <h2 class="blind">자기소개 영역</h2>
-        <div class="title-area">
-          <div class="title">
-            <span class="row row1">
-              <em>passionate</em> <span class="txt-small">WEB</span>
-            </span>
-            <span class="row row2">
-              <figure></figure><em>publisher</em>
-            </span>
-            <span class="row row3">
-              <span class="txt-small">from</span> <em>rome</em><figure></figure>
-            </span>
+      <div class="common-inner">
+        <!-- visual -->
+        <section id="visual" class="sc-visual">
+          <h2 class="blind">비주얼 영역</h2>
+          <div class="title-area pc">
+            <div class="title">
+              <div class="row row1">
+                <strong>creative</strong> <span class="txt-small">digital</span>
+              </div>
+              <div class="row row2">
+                <div class="thumb">
+                  <img src="./assets/images/content/visual_img1.jpg" alt="" />
+                </div>
+                <strong>designer</strong>
+              </div>
+              <div class="row row3">
+                <span class="txt-small">from</span> <strong>rome</strong>
+                <div class="thumb">
+                  <img src="./assets/images/content/visual_img2.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title-area mobile">
+            <div class="title">
+              <div class="row row1">
+                <strong>creative</strong>
+                <strong>digital</strong>
+              </div>
+              <div class="row row2">
+                <strong>designer</strong>
+                <strong>from rome</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- about -->
+        <section id="about" class="sc-about">
+          <h2 class="blind">소개 영역</h2>
+          <div class="about-content">
+            <p class="desc">
+              I am Riccardo, 23 years old and I am a self-taught Digital Designer from Rome. Currently I do my job as a freelance collaborating with small companies and agencies, I deal with UI Design / Front-end Development and Motion Design.
+            </p>
+            <a href="#" class="link-more btn">read more</a>
+          </div>
+        </section>
+        <!-- work -->
+        <section id="work" class="sc-work">
+          <h2 class="sc-title">selected projects</h2>
+          <ul class="work-list">
+            <li class="work-item">
+              <div class="thumb-box">
+                <img src="./assets/images/content/work_img1.jpeg" alt="" />
+              </div>
+              <div class="info-box">
+                <h3 class="title">S.Scarcelli</h3>
+                <p class="desc">
+                  website for a professional video maker from Rome who collaborates with important brands and personalities
+                </p>
+                <div class="link-more-wrap">
+                  <a href="#" class="link-more btn">view project</a>
+                  <a href="#" class="link-more btn">view info</a>
+                </div>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="thumb-box">
+                <img src="./assets/images/content/work_img2.jpeg" alt="" />
+              </div>
+              <div class="info-box">
+                <h3 class="title">FacileBar.it</h3>
+                <p class="desc">
+                  e-commerce website and web platform for b2b sales in the hO.RE.CA sector.
+                </p>
+                <div class="link-more-wrap">
+                  <a href="#" class="link-more btn">view project</a>
+                  <a href="#" class="link-more btn">view info</a>
+                </div>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="thumb-box">
+                <img src="./assets/images/content/work_img3.jpeg" alt="" />
+              </div>
+              <div class="info-box">
+                <h3 class="title">CMC Gallarate</h3>
+                <p class="desc">
+                  website for a private medical center in Gallarate, Italy
+                </p>
+                <div class="link-more-wrap">
+                  <a href="#" class="link-more btn">view project</a>
+                  <a href="#" class="link-more btn">view info</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="common-inner">
+        <div class="group-row">
+          <p class="copyright"><i class="ico-logo"></i> <strong>©</strong> <span class="year"></span></p>
+          <a href="#" class="link-contact btn">let's get in touch</a>
+          <div class="social-area">
+            <a href="#" class="link-social btn">github</a>
+            <a href="#" class="link-social btn">velog</a>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </footer>
     <div id="custom-cursor" class="custom-cursor"></div>
   </div>
   <!-- JS -->

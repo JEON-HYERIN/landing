@@ -31,9 +31,8 @@ html {
 }
 
 #wrapper {
-  min-width: 320px;
   position: relative;
-  width: 100%;
+  min-width: 320px;
   min-height: 100vh;
 }
 
@@ -73,8 +72,6 @@ html {
 i[class^="ico-"],
 i[class*="ico-"] {
   display: inline-block;
-  width: 25px;
-  height: 25px;
   vertical-align: top;
   background-repeat: no-repeat;
 }
@@ -84,4 +81,42 @@ div[class*="inner"] {
   margin: 0 auto;
 }
 
-.common-inner {}
+.common-inner {
+  // max-width: 1710px;
+  padding-left: 3.75em;
+  padding-right: 3.75em;
+
+  @include desktop {
+    padding-left: 7.5em;
+    padding-right: 7.5em;
+  }
+
+  @include tablet {
+    padding-left: 2em;
+  }
+
+  @include mobile-small {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+.ico-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.3em;
+
+  background: {
+    image: url("../images/icon/logo.svg");
+    position: center;
+    size: cover;
+  }
+}
+
+.ico-circle {
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+}

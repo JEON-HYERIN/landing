@@ -4,24 +4,25 @@
   left: 0;
   top: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 3.5em 3.75em 3em;
   text-align: center;
   z-index: 9;
 
-  @include desktop {
-    padding-right: 7.5em;
-    padding-left: 7.5em;
-    object-fit: fill;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5em 3.75em 3em;
+
+    @include desktop {
+      padding-left: 7.5em;
+      padding-right: 7.5em;
+    }
+
+    @include mobile-small {
+      padding: 2.5em 1em 1em;
+    }
   }
 
-  @include mobile-small {
-    padding: 2.5em 1em 1em;
-    align-items: center;
-    background-color: #0a0a0a;
-  }
-  .logo-area {}
   .logo {
     a {
       display: flex;
@@ -38,14 +39,6 @@
         font-size: 1.6em;
         letter-spacing: 1px;
       }
-      &::before {
-        content: '';
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-right: 0.5em;
-        background: url("../images/icon/logo.svg") no-repeat center/cover;
-      }
     }
   }
 }
@@ -55,23 +48,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include mobile-small {
-
-    }
   }
-  .gnb-item {
-    & + .gnb-item {
-      .link-gnb {
-        padding-left: 1.25em;
 
-        @include mobile-small {
-          padding-left: 1.5em;
-        }
-      }
-    }
-  }
   .link-gnb {
     display: block;
+    padding-left: 1.25em;
     font-family: 'Roboto Condensed', sans-serif;
     color: #f9f9f9;
     font-size: 1.25em;
@@ -80,10 +61,12 @@
     transition: .3s;
 
     @include mobile-small {
-    font-size: 1em;
+      padding-left: 1.5em;
+      font-size: 1em;
     }
 
-    &:hover, &.selected {
+    &:hover,
+    &.selected {
       color: #fd550e;
     }
   }
