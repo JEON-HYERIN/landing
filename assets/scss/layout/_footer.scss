@@ -1,20 +1,6 @@
 // footer
 #footer {
   margin-top: 7.5em;
-  // margin-right: 3.75em;
-  // margin-left: 3.75em;
-
-  @include desktop {
-    // margin-right: 7.5em;
-    // margin-left: 7.5em;
-  }
-
-  @include mobile-small {
-    // margin-left: 1em;
-    // margin-right: 1em;
-    margin-left: 0;
-    margin-right: 0;
-  }
 
   .common-inner {
     @include mobile-small {
@@ -24,10 +10,14 @@
 
   .group-row {
     display: flex;
-    padding-top: 3.75em;
-    padding-bottom: 3em;
     justify-content: space-between;
-    border-top: 1px solid #f9f9f9;
+
+    padding: {
+      top: 3.75em;
+      bottom: 3em;
+    }
+
+    border-top: 1px solid $color-white;
 
     @include desktop {
       border-top: 0.3px solid hsla(0, 0%, 97.7%, 0.66);
@@ -42,39 +32,48 @@
   .copyright {
     display: flex;
     align-items: center;
-    font-family: Pprightgrotesk, sans-serif;
-    color: #f9f9f9;
-    font-size: 1.87em;
+
+    font: {
+      family: Pprightgrotesk, sans-serif;
+      size: 1.87em;
+      weight: 400;
+    }
+
     line-height: 1em;
-    font-weight: 400;
+    color: $color-white;
     letter-spacing: 1px;
     text-transform: uppercase;
 
     strong {
       font-family: 'Rl unno', sans-serif;
-      font-weight: 400;
       margin-right: 2px;
     }
 
     @include mobile-small {
       order: 3;
+    }
+
+    @include mobile-medium {
       font-size: 1.5em;
     }
   }
 
   .btn {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.5em;
-    font-weight: 400;
+    font: {
+      family: 'Roboto Condensed', sans-serif;
+      size: 1.5em;
+      weight: 400;
+    }
+
     letter-spacing: normal;
 
-    @include mobile-small {
+    @include mobile-medium {
       font-size: 1.3em;
     }
 
     &::after {
       height: 2px;
-      bottom: -1px;
+      bottom: 0;
     }
   }
 
@@ -92,7 +91,7 @@
       top: 50%;
       transform: translateY(-50%);
 
-      @include mobile-small {
+      @include mobile-medium {
         display: none;
       }
     }

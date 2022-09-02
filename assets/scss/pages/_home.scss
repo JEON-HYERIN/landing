@@ -6,9 +6,11 @@
     margin-top: 9.37em;
   }
 
-  @include mobile-small {
-    margin-top: 4.9em;
-    margin-bottom: 4.6em;
+  @include mobile-medium {
+    margin: {
+      top: 4.9em;
+      bottom: 4.6em;
+    }
   }
 
   .title-area {
@@ -20,22 +22,28 @@
       line-height: 14px;
       overflow: hidden;
 
-      @include mobile-small {
+      @include mobile-medium {
         flex-wrap: wrap;
         justify-content: flex-start;
-        padding-top: 4em;
-        padding-left: 1.5em;
+
+        padding: {
+          top: 4em;
+          left: 1.5em;
+        }
       }
 
       &2 {
-        @include mobile-small {
+        @include mobile-medium {
           padding-top: 0em;
         }
 
         .thumb {
           width: 20%;
-          margin-top: 0.25em;
-          margin-right: 3.5vw;
+
+          margin: {
+            top: 0.25em;
+            right: 3.5vw;
+          }
 
           @include desktop {
             width: 18%;
@@ -50,7 +58,7 @@
             @include desktop {
               width: 100%;
               height: auto;
-              outline-color: #f9f9f9;
+              outline-color: $color-white;
               outline-offset: 0px;
               outline-style: none;
               outline-width: 3px;
@@ -72,8 +80,12 @@
           @include desktop {
             width: 21%;
             height: 10vw;
-            margin-top: 0.5em;
-            margin-left: 4em;
+
+            margin: {
+              top: 0.5em;
+              left: 4em;
+            }
+
             padding-top: 0;
           }
 
@@ -86,9 +98,13 @@
 
     strong {
       font-family: 'Rl unno', sans-serif;
-      color: #f9f9f9;
-      font-size: 16.5em;
-      font-weight: 400;
+      color: $color-white;
+
+      font: {
+        size: 16.5em;
+        weight: 400;
+      }
+
       line-height: 0.8em;
       letter-spacing: 6px;
       text-transform: uppercase;
@@ -99,11 +115,19 @@
         line-height: 0.8em;
       }
 
-      @include tablet {
-        font-size: 12.5em;
+      @include desktop-small {
+        font-size: 14em;
       }
 
-      @include mobile-small {
+      @include tablet-large {
+        font-size: 10.5em;
+      }
+
+      @include mobile {
+        font-size: 8.5em;
+      }
+
+      @include mobile-medium {
         font-size: 5.5em;
         line-height: 1em;
         text-align: center;
@@ -113,17 +137,29 @@
 
     .txt-small {
       margin-left: 3vw;
-      font-family: Pprightgrotesk, sans-serif;
-      font-size: 12em;
-      font-weight: 400;
+
+      font: {
+        family: Pprightgrotesk, sans-serif;
+        size: 12em;
+        weight: 400;
+      }
+
       line-height: 1em;
-      color: #f9f9f9;
+      color: $color-white;
       letter-spacing: 5px;
       text-transform: uppercase;
       overflow: hidden;
 
       @include desktop {
         font-size: 14em;
+      }
+
+      @include tablet-large {
+        font-size: 8em;
+      }
+
+      @include mobile {
+        font-size: 6em;
       }
     }
 
@@ -139,7 +175,7 @@
     &.pc {
       display: block;
 
-      @include mobile-small {
+      @include mobile-medium {
         display: none;
       }
     }
@@ -147,7 +183,7 @@
     &.mobile {
       display: none;
 
-      @include mobile-small {
+      @include mobile-medium {
         display: block;
       }
     }
@@ -159,52 +195,47 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  // padding-right: 3.75em;
-
-  @include desktop {
-    // padding-right: 7.5em;
-  }
-
-  @include tablet {
-    // padding-right: 2em;
-  }
-
-  @include mobile-small {
-    // padding-right: 1em;
-    // padding-left: 1em;
-  }
 
   .about-content {
     width: 46%;
-    padding-top: 5.6em;
-    padding-bottom: 7.5em;
+
+    padding: {
+      top: 5.6em;
+      bottom: 7.5em;
+    }
 
     @include desktop {
       width: 41%;
       padding-bottom: 9.7em;
     }
 
-    @include mobile-small {
+    @include tablet-large {
+      width: 65%;
+    }
+
+    @include mobile-medium {
       width: 100%;
-      padding-top: 0em;
-      padding-bottom: 3em;
+
+      padding: {
+        top: 0;
+        bottom: 3em;
+      }
     }
 
     .desc {
       position: relative;
       display: flex;
-      // width: 95%;
       margin-bottom: 1.5em;
-      font-family: 'Roboto Condensed', sans-serif;
-      color: #f9f9f9;
-      font-size: 1.5em;
-      line-height: 1.2em;
-      font-weight: 400;
-      text-transform: uppercase;
+      color: $color-white;
 
-      @include desktop {
-        // width: 99%;
+      font: {
+        family: 'Roboto Condensed', sans-serif;
+        size: 1.5em;
+        weight: 400;
       }
+
+      line-height: 1.2em;
+      text-transform: uppercase;
 
       @include mobile-small {
         font-size: 1.2em;
@@ -231,7 +262,7 @@
 
       @include mobile-small {
         margin-left: 0.8em;
-        color: #fd550e;
+        color: $color-point;
       }
     }
   }
@@ -240,31 +271,19 @@
 // work
 .sc-work {
   padding-top: 3.75em;
-  // padding-left: 3.75em;
-  // padding-right: 3.75em;
-
-  @include desktop {
-    // padding-left: 7.5em;
-    // padding-right: 7.5em;
-  }
-
-  @include tablet {
-    // padding-left: 2em;
-  }
-
-  @include mobile-small {
-    // padding-left: 1em;
-    // padding-right: 1em;
-  }
 
   .sc-title {
     padding-bottom: 10px;
     border-bottom: 1px solid hsla(0, 0%, 97.7%, 0.62);
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #f9f9f9;
-    font-size: 1.56em;
+
+    font: {
+      family: 'Roboto Condensed', sans-serif;
+      size: 1.56em;
+      weight: 400;
+    }
+
     line-height: 1em;
-    font-weight: 400;
+    color: $color-white;
     text-transform: uppercase;
 
     @include desktop {
@@ -287,52 +306,74 @@
     &:nth-child(2n) {
       flex-direction: row-reverse;
 
-      @include mobile-small {
+      @include mobile-medium {
         flex-direction: column;
       }
     }
 
-    @include mobile-small {
+    @include mobile-medium {
       flex-direction: column;
     }
 
     .thumb-box {
-      width: 686px;
       display: flex;
       overflow: hidden;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
+      width: 540px;
 
-      @include desktop {}
-
-      @include mobile-small {
-        width: auto;
+      @include desktop {
+        width: 686px;
       }
 
-      img {}
+      @include mobile-medium {
+        width: 100%;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      img {
+        transition: .5s;
+      }
     }
 
     .info-box {
+      position: relative;
       display: flex;
       flex-wrap: wrap;
       align-content: center;
       width: 30%;
 
-      @include mobile-small {
+      @include desktop-small {
+        width: 55%;
+      }
+
+      @include mobile-medium {
         width: 100%;
         flex-direction: column;
       }
     }
 
     .title {
-      margin-top: 20px;
-      margin-bottom: 10px;
-      margin-left: -27px;
-      font-family: 'Rl unno', sans-serif;
-      color: #f9f9f9;
-      font-size: 9.37em;
+      margin: {
+        top: 20px;
+        bottom: 10px;
+        left: -27px;
+      }
+
+      font: {
+        family: 'Rl unno', sans-serif;
+        size: 9.37em;
+        weight: 400;
+      }
+
       line-height: 1em;
-      font-weight: 400;
+      color: $color-white;
       text-transform: uppercase;
       transition: .3s;
 
@@ -342,33 +383,56 @@
         line-height: 0.9em;
       }
 
+      @include tablet-large {
+        font-size: 8em;
+      }
+
       @include tablet {
+        font-size: 7em;
+      }
+
+      @include mobile {
         font-size: 6em;
       }
 
+      @include mobile-medium {
+        margin: {
+          top: 25px;
+          bottom: 15px;
+          left: 0;
+        }
+      }
+
       @include mobile-small {
-        margin-top: 25px;
-        margin-bottom: 15px;
-        margin-left: 0;
         font-size: 4.2em;
       }
 
       &:hover {
-        color: #fd550e;
+        color: $color-point;
       }
     }
 
     .desc {
       width: 75%;
-      margin-bottom: 25px;
-      margin-left: 21px;
-      font-family: 'Roboto Condensed', sans-serif;
-      color: #f9f9f9;
-      font-size: 1.5em;
+
+      margin: {
+        bottom: 25px;
+        left: 21px;
+      }
+
+      font: {
+        family: 'Roboto Condensed', sans-serif;
+        size: 1.5em;
+        weight: 400;
+      }
+
       line-height: 1.2em;
-      font-weight: 400;
-      text-align: left;
-      text-transform: uppercase;
+      color: $color-white;
+
+      text: {
+        align: left;
+        transform: uppercase;
+      }
 
       @include desktop {
         line-height: 1.3em;
@@ -378,7 +442,7 @@
         font-size: 1.2em;
       }
 
-      @include mobile-small {
+      @include mobile-medium {
         width: 100%;
         margin-left: 0;
         line-height: 1.3em;
@@ -390,7 +454,7 @@
     display: flex;
     margin-left: 21px;
 
-    @include mobile-small {
+    @include mobile-medium {
       margin-left: 0;
     }
   }
@@ -413,51 +477,55 @@
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 200;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #d4d4d4;
-  color: #0a0a0a;
+  z-index: 200;
 
   @include mobile-small {
-    background-color: #fd550e;
+    background-color: $color-point;
   }
 
   .title-box {
     text-align: center;
+    color: $color-black;
   }
 
   .title {
     margin-top: 0.25em;
-    font-family: Pprightgrotesk, sans-serif;
-    color: #0a0a0a;
-    font-size: 3.6em;
+
+    font: {
+      family: Pprightgrotesk, sans-serif;
+      size: 3.6em;
+      weight: 400;
+    }
+
     line-height: 1em;
-    font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
 
     @include mobile-small {
-      color: #f9f9f9;
       font-size: 2.5em;
+      color: $color-white;
     }
   }
 
   .desc {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #0a0a0a;
-    font-size: 1.2em;
-    font-weight: 400;
+    font: {
+      family: 'Roboto Condensed', sans-serif;
+      size: 1.2em;
+      weight: 400;
+    }
+
     text-transform: uppercase;
 
     em {
       font-family: 'Rl unno', sans-serif;
-      font-weight: 400;
     }
 
     @include mobile-small {
-      color: #f9f9f9;
+      color: $color-white;
       font-size: 0.9em;
     }
   }
@@ -470,7 +538,7 @@
   width: 1rem;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: #f9f9f9;
+  background: $color-white;
   mix-blend-mode: difference;
   opacity: 0;
   visibility: visible;
@@ -491,9 +559,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/bg/overlay.gif");
-  background-position: 0 0;
-  background-size: 250px;
+
+  background: {
+    image: url("../images/bg/overlay.gif");
+    position: 0 0;
+    size: 250px;
+  }
+
   opacity: 0.06;
   pointer-events: none;
   z-index: 300;

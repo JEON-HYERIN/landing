@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  background-color: #0a0a0a;
+  background-color: $color-black;
 }
 
 body,
@@ -27,7 +27,7 @@ html {
 
 ::selection {
   background-color: #1F1F1F;
-  color: #fd550e;
+  color: $color-point;
 }
 
 #wrapper {
@@ -82,13 +82,16 @@ div[class*="inner"] {
 }
 
 .common-inner {
-  // max-width: 1710px;
-  padding-left: 3.75em;
-  padding-right: 3.75em;
+  padding: {
+    left: 3.75em;
+    right: 3.75em;
+  }
 
   @include desktop {
-    padding-left: 7.5em;
-    padding-right: 7.5em;
+    padding: {
+      left: 7.5em;
+      right: 7.5em;
+    }
   }
 
   @include tablet {
@@ -96,8 +99,10 @@ div[class*="inner"] {
   }
 
   @include mobile-small {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: {
+      left: 1em;
+      right: 1em;
+    }
   }
 }
 

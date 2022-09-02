@@ -6,6 +6,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Pprightgrotesk';
   src: url('../fonts/620f8207ff706fc9d242727f_PPRightGrotesk-TallRegular.woff2') format('woff2');
@@ -21,10 +22,13 @@ html {
 }
 
 body {
-  font-family: Arial,sans-serif;
-  font-size: 14px;
-  font-weight: 400;
+  font: {
+    family: Arial, sans-serif;
+    size: 14px;
+    weight: 400;
+  }
+
   line-height: 20px;
-  letter-spacing: 0px;
-  color: #f9f9f9;
+  letter-spacing: 0;
+  color: $color-white;
 }
