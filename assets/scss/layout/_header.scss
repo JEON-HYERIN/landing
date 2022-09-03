@@ -86,16 +86,7 @@
       // padding-left: 1.5em;
       font-size: 1em;
     }
-
-    &:hover {
-      // color: $color-point;
-
-      &::before {
-        transform: scaleX(1);
-        transform-origin: left;
-      }
-    }
-
+    
     &::before {
       content: '';
       position: absolute;
@@ -107,6 +98,15 @@
       transform: scaleX(0);
       transform-origin: right;
       transition: transform .4s;
+    }
+
+    &:hover {
+      // color: $color-point;
+
+      &::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
     }
   }
 }
