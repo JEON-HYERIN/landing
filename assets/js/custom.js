@@ -37,12 +37,22 @@ $(function(){
     $('html, body').animate({scrollTop: scrollTop}, 500);
   });
 
-  // custom-cursor
-  const mouseCursor = document.querySelector('.custom-cursor');
+  // cursor
+  const mouseCursor = document.querySelector('.cursor');
 
   window.addEventListener('mousemove', function(e){
     mouseCursor.style.left = e.clientX + 'px';
     mouseCursor.style.top = e.clientY + 'px';
     mouseCursor.style.opacity = '1';
   });
+
+  $('a').mouseenter(function(){
+    $('.cursor').addClass('border');
+  });
+
+  $('a').mouseleave(function(){
+    $('.cursor').removeClass('border');
+  });
+
 });
+

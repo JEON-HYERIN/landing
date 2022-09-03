@@ -9,7 +9,7 @@
 
   color: $color-white;
   line-height: 1em;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   transition: .3s;
 
@@ -18,10 +18,10 @@
   }
 
   &:hover {
-    color: #fd550e;
+    color: $color-point;
 
     &::after {
-      background: #fd550e;
+      background: $color-point;
     }
   }
 
