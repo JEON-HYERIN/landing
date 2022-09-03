@@ -308,13 +308,17 @@ body { font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; line-h
 
 .page-load { position: fixed; left: 0; top: 0; right: 0; bottom: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #d4d4d4; z-index: 200; }
 
-.page-load .title-box { text-align: center; color: #0a0a0a; opacity: 0; }
+@media (max-width: 479px) { .page-load { background-color: #fd550e; } }
 
-.page-load .title { margin-top: 0.25em; font-family: Pprightgrotesk, sans-serif; font-size: 3.6em; font-weight: 400; line-height: 1em; letter-spacing: 1px; text-transform: uppercase; }
+.page-load .title-box { font-weight: 400; text-align: center; text-transform: uppercase; color: #0a0a0a; opacity: 0; }
+
+@media (max-width: 479px) { .page-load .title-box { color: #f9f9f9; } }
+
+.page-load .title { margin-top: 0.25em; font-family: Pprightgrotesk, sans-serif; font-size: 3.6em; line-height: 1em; letter-spacing: 1px; }
 
 @media (max-width: 479px) { .page-load .title { font-size: 2.5em; } }
 
-.page-load .desc { font-family: 'Roboto Condensed', sans-serif; font-size: 1.2em; font-weight: 400; text-transform: uppercase; }
+.page-load .desc { font-family: 'Roboto Condensed', sans-serif; font-size: 1.2em; }
 
 .page-load .desc em { font-family: 'Rl unno', sans-serif; }
 
@@ -329,3 +333,5 @@ body { font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; line-h
 .cursor-pointer { position: absolute; width: 1rem; height: 1rem; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border-radius: 50%; border: 1px solid transparent; background: #f9f9f9; mix-blend-mode: difference; -webkit-transition: .4s ease-out; transition: .4s ease-out; }
 
 .overlay { position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-image: url("../images/bg/overlay.gif"); background-position: 0 0; background-size: 250px; opacity: 0.06; pointer-events: none; z-index: 300; }
+
+@media (max-width: 479px) { .overlay { opacity: 0.02; } }

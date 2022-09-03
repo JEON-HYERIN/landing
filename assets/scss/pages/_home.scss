@@ -497,13 +497,19 @@
   z-index: 200;
 
   @include mobile-small {
-    // background-color: $color-point;
+    background-color: $color-point;
   }
 
   .title-box {
+    font-weight: 400;
     text-align: center;
+    text-transform: uppercase;
     color: $color-black;
     opacity: 0;
+
+    @include mobile-small {
+      color: $color-white;
+    }
   }
 
   .title {
@@ -512,16 +518,13 @@
     font: {
       family: Pprightgrotesk, sans-serif;
       size: 3.6em;
-      weight: 400;
     }
 
     line-height: 1em;
     letter-spacing: 1px;
-    text-transform: uppercase;
 
     @include mobile-small {
       font-size: 2.5em;
-      // color: $color-white;
     }
   }
 
@@ -529,17 +532,13 @@
     font: {
       family: 'Roboto Condensed', sans-serif;
       size: 1.2em;
-      weight: 400;
     }
-
-    text-transform: uppercase;
 
     em {
       font-family: 'Rl unno', sans-serif;
     }
 
     @include mobile-small {
-      // color: $color-white;
       font-size: 0.9em;
     }
   }
@@ -600,6 +599,6 @@
   z-index: 300;
 
   @include mobile-small {
-    // opacity: 0.02;
+    opacity: 0.02;
   }
 }
