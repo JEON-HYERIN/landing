@@ -3,20 +3,20 @@ $(function(){
   $(document).on('click', 'a[href="#"]', function (e) {
     e.preventDefault();
   });
-
+  
   // pre-load
   const load = gsap.timeline({
-    defaults: {
-      duration: 2.5
-    },
-    paused: true
+    paused: true,
   })
-  load.addLabel('a')
-  .fromTo('.title-box', {opacity: 0}, {opacity: 1},'a')
-  .to('.page-load', {y: '-95vw'},'a+=1.5')
-  .to('.title-box', {opacity: 0, ease: Power4.easeIn}, 'a+=1.1')
-  .set('.page-load', {display: 'none'});
+  load.addLabel('label')
+  .to('.title-box', {opacity: 1, delay: .3, duration: 2},'label')
+  .to('.page-load', {yPercent: -100, delay: 2.5, ease: Power3.easeIn, duration: .8},'label')
+  .to('.title-box', {opacity: 0, delay: 2, duration: 1.7},'label')
+  .set('.page-load', {display: 'none'})
   load.play();
+
+  // visual
+  const a = gsap.fromTo('.sc-visual .title .row *', {yPercent: 100,}, {yPercent: 0, duration: .5, ease: Power4.easeOut, delay: 3.3});
 
   // 올해년도 구하기
   const year = new Date().getFullYear();
