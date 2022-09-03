@@ -262,15 +262,11 @@
     }
 
     .link-more {
-      margin-left: 1em;
+      margin-left: 0.8em;
       color: $color-point;
 
       &::after {
         background: $color-point;
-      }
-
-      @include mobile-medium {
-        margin-left: 0.8em;
       }
     }
   }

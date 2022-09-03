@@ -234,11 +234,9 @@ body { font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; line-h
 
 @media (max-width: 479px) { .sc-about .about-content .desc::before { margin-top: 0; } }
 
-.sc-about .about-content .link-more { margin-left: 1em; color: #fd550e; }
+.sc-about .about-content .link-more { margin-left: 0.8em; color: #fd550e; }
 
 .sc-about .about-content .link-more::after { background: #fd550e; }
-
-@media (max-width: 640px) { .sc-about .about-content .link-more { margin-left: 0.8em; } }
 
 .sc-work { padding-top: 3.75em; }
 
