@@ -496,7 +496,7 @@
   background-color: #d4d4d4;
   z-index: 200;
 
-  @include mobile-small {
+  @include mobile-medium {
     background-color: $color-point;
   }
 
@@ -507,7 +507,7 @@
     color: $color-black;
     opacity: 0;
 
-    @include mobile-small {
+    @include mobile-medium {
       color: $color-white;
     }
   }
@@ -544,6 +544,31 @@
   }
 }
 
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: {
+    image: url("../images/bg/overlay.gif");
+    position: 0 0;
+    size: 250px;
+  }
+
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 300;
+
+  @include mobile-medium {
+    opacity: 0.02;
+  }
+}
+
 // cursor
 .cursor {
   position: fixed;
@@ -575,30 +600,5 @@
     background: $color-white;
     mix-blend-mode: difference;
     transition: .4s ease-out;
-  }
-}
-
-.overlay {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: {
-    image: url("../images/bg/overlay.gif");
-    position: 0 0;
-    size: 250px;
-  }
-
-  opacity: 0.06;
-  pointer-events: none;
-  z-index: 300;
-
-  @include mobile-small {
-    opacity: 0.02;
   }
 }
