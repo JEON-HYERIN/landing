@@ -134,7 +134,7 @@
       }
 
       @include mobile-medium {
-        font-size: 7.5em;
+        font-size: 6.5em;
         line-height: 1em;
         text-align: center;
       }
@@ -242,9 +242,8 @@
         weight: 400;
       }
 
-      @include mobile-small {
+      @include tablet {
         font-size: 1.2em;
-        line-height: 1.3em;
       }
 
       &::before {
@@ -270,7 +269,7 @@
         background: $color-point;
       }
 
-      @include mobile-small {
+      @include mobile-medium {
         margin-left: 0.8em;
       }
     }

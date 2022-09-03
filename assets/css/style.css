@@ -190,7 +190,7 @@ body { font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; line-h
 
 @media (max-width: 767px) { .sc-visual .title strong { font-size: 8.6em; letter-spacing: 2px; } }
 
-@media (max-width: 640px) { .sc-visual .title strong { font-size: 7.5em; line-height: 1em; text-align: center; } }
+@media (max-width: 640px) { .sc-visual .title strong { font-size: 6.5em; line-height: 1em; text-align: center; } }
 
 @media (max-width: 479px) { .sc-visual .title strong { font-size: 5.1em; } }
 
@@ -226,7 +226,7 @@ body { font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; line-h
 
 .sc-about .about-content .desc { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 1.5em; color: #f9f9f9; font-size: 1.5em; font-weight: 400; }
 
-@media (max-width: 479px) { .sc-about .about-content .desc { font-size: 1.2em; line-height: 1.3em; } }
+@media (max-width: 991px) { .sc-about .about-content .desc { font-size: 1.2em; } }
 
 .sc-about .about-content .desc::before { content: ''; display: inline-block; width: 16px; height: 16px; margin-right: 0.5em; border-radius: 50%; background-color: #f9f9f9; -ms-flex-negative: 0; flex-shrink: 0; margin-top: 7px; }
 
@@ -238,7 +238,7 @@ body { font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; line-h
 
 .sc-about .about-content .link-more::after { background: #fd550e; }
 
-@media (max-width: 479px) { .sc-about .about-content .link-more { margin-left: 0.8em; } }
+@media (max-width: 640px) { .sc-about .about-content .link-more { margin-left: 0.8em; } }
 
 .sc-work { padding-top: 3.75em; }
 
