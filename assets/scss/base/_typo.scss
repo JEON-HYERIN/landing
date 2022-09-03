@@ -31,4 +31,10 @@ body {
   line-height: 20px;
   letter-spacing: 0;
   color: $color-white;
+  word-break: keep-all;
+}
+
+.ko {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.5em;
 }

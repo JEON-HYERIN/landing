@@ -7,6 +7,8 @@
   <title>Hyerin's Portfolio</title>
   <!-- Google Fonts - Roboto Condensed -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+  <!-- Google Fonts - Noto Sans KR -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
   <!-- Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <!-- CSS -->
@@ -15,16 +17,16 @@
   <link rel="shortcut icon" href="./favicon.jpg" type="image/x-icon" />
 </head>
 <body>
-  <div class="page-load">
+  <!-- <div class="page-load">
     <div class="title-box">
       <strong class="title">web publisher</strong>
       <p class="desc"><em>©</em><span class="year"></span> portfolio</p>
     </div>
-  </div>
+  </div> -->
   <div id="wrapper">
     <!-- HEADER -->
     <header id="header">
-      <div class="inner">
+      <div class="common-inner">
         <div class="logo-area">
           <h1 class="logo"><a href="#"><i class="ico-logo"></i>JEONHYERIN</a></h1>
         </div>
@@ -43,35 +45,31 @@
         <!-- visual -->
         <section id="visual" class="sc-visual">
           <h2 class="blind">비주얼 영역</h2>
-          <div class="title-area pc">
-            <div class="title">
-              <div class="row row1">
-                <strong>creative</strong> <span class="txt-small">digital</span>
+          <div class="title pc">
+            <div class="row row1">
+              <strong>creative</strong> <span class="txt-small">web</span>
+            </div>
+            <div class="row row2">
+              <div class="thumb">
+                <img src="./assets/images/content/visual_img1.jpg" alt="" />
               </div>
-              <div class="row row2">
-                <div class="thumb">
-                  <img src="./assets/images/content/visual_img1.jpg" alt="" />
-                </div>
-                <strong>designer</strong>
-              </div>
-              <div class="row row3">
-                <span class="txt-small">from</span> <strong>rome</strong>
-                <div class="thumb">
-                  <img src="./assets/images/content/visual_img2.jpeg" alt="" />
-                </div>
+              <strong>publisher</strong>
+            </div>
+            <div class="row row3">
+              <span class="txt-small">i'm</span> <strong>ready</strong>
+              <div class="thumb">
+                <img src="./assets/images/content/visual_img2.jpeg" alt="" />
               </div>
             </div>
           </div>
-          <div class="title-area mobile">
-            <div class="title">
-              <div class="row row1">
-                <strong>creative</strong>
-                <strong>digital</strong>
-              </div>
-              <div class="row row2">
-                <strong>designer</strong>
-                <strong>from rome</strong>
-              </div>
+          <div class="title mobile">
+            <div class="row row1">
+              <strong>creative</strong>
+              <strong>web</strong>
+            </div>
+            <div class="row row2">
+              <strong>publisher</strong>
+              <strong>i'm ready</strong>
             </div>
           </div>
         </section>
@@ -79,61 +77,119 @@
         <section id="about" class="sc-about">
           <h2 class="blind">소개 영역</h2>
           <div class="about-content">
-            <p class="desc">
-              I am Riccardo, 23 years old and I am a self-taught Digital Designer from Rome. Currently I do my job as a
-              freelance collaborating with small companies and agencies, I deal with UI Design / Front-end Development
-              and Motion Design.
+            <p class="desc ko">
+              '잘 만든 웹사이트'를 만들고자 하는 욕심<br />
+              단순히 페이지를 구현하는 것에 그치는 것이 아니라 웹 표준, 웹 접근성, 그리고 웹 호환성 등을 고려하여 마크업 하는 웹 퍼블리셔가 되고자 합니다. 책임감을 가지고 임하며 맡은 바에 있어서 항상 최선을 다할 것을 약속드립니다.
             </p>
-            <a href="#" class="link-more btn">read more</a>
+            <a href="#" class="link-more btn">scroll down</a>
           </div>
         </section>
         <!-- work -->
         <section id="work" class="sc-work">
-          <h2 class="sc-title">selected projects</h2>
+          <h2 class="sc-title">my projects</h2>
           <ul class="work-list">
             <li class="work-item">
-              <div class="thumb-box">
-                <img src="./assets/images/content/work_img1.jpeg" alt="" />
+              <div class="thumb-box thumb-dim">
+                <img src="./assets/images/content/work_cmg.jpg" alt="" />
               </div>
               <div class="info-box">
-                <h3 class="title">S.Scarcelli</h3>
-                <p class="desc">
-                  website for a professional video maker from Rome who collaborates with important brands and
-                  personalities
+                <h3 class="title">CMG Digital</h3>
+                <p class="desc ko">
+                  크로아티아의 광고 에이전시 CMG Digital 공식사이트를 클론 코딩 하였으며 반응형으로 제작하였습니다.
                 </p>
+                <div class="keyword-wrap">
+                  <span class="keyword">#SCSS</span>
+                  <span class="keyword">#GSAP</span>
+                  <span class="keyword">#Swiper</span>
+                  <span class="keyword">#Responsive Web</span>
+                </div>
                 <div class="link-more-wrap">
-                  <a href="#" class="link-more btn">view project</a>
-                  <a href="#" class="link-more btn">view info</a>
+                  <a href="https://jeon-hyerin.github.io/cmg/" target="_blank" class="link-more btn">view project</a>
+                  <a href="https://velog.io/@jeonhyelin/CMG-Digital" target="_blank" class="link-more btn">information</a>
                 </div>
               </div>
             </li>
             <li class="work-item">
               <div class="thumb-box">
-                <img src="./assets/images/content/work_img2.jpeg" alt="" />
+                <img src="./assets/images/content/work_apple.jpg" alt="" />
               </div>
               <div class="info-box">
-                <h3 class="title">FacileBar.it</h3>
-                <p class="desc">
-                  e-commerce website and web platform for b2b sales in the hO.RE.CA sector.
+                <h3 class="title">AirPods Max - Apple</h3>
+                <p class="desc ko">
+                  애플 공식사이트 AirPods Max - Apple (KR) 를 클론 코딩 하였으며 PC 버전으로 제작하였습니다. 해상도는 1920 기준입니다.
+                  
+                  <!-- 애플 공식사이트 AirPods Max - Apple을 클론 코딩 하였으며 PC 버전으로 제작하였습니다. 해상도는 1920 기준입니다. -->
                 </p>
+                <div class="keyword-wrap">
+                  <span class="keyword">#SCSS</span>
+                  <span class="keyword">#GSAP</span>
+                  <span class="keyword">#Swiper</span>
+                  <span class="keyword">#PC</span>
+                </div>
                 <div class="link-more-wrap">
-                  <a href="#" class="link-more btn">view project</a>
-                  <a href="#" class="link-more btn">view info</a>
+                  <a href="https://jeon-hyerin.github.io/apple/" target="_blank" class="link-more btn">view project</a>
+                  <a href="https://velog.io/@jeonhyelin/AirPods-Max-Apple" target="_blank" class="link-more btn">information</a>
                 </div>
               </div>
             </li>
             <li class="work-item">
               <div class="thumb-box">
-                <img src="./assets/images/content/work_img3.jpeg" alt="" />
+                <img src="./assets/images/content/work_wconcept.jpg" alt="" />
               </div>
               <div class="info-box">
-                <h3 class="title">CMC Gallarate</h3>
-                <p class="desc">
-                  website for a private medical center in Gallarate, Italy
+                <h3 class="title">W Concept</h3>
+                <p class="desc ko">
+                  W컨셉 공식사이트를 클론 코딩하였으며 PC / Mobile 2가지 버전으로 제작한 적응형 웹사이트입니다.
                 </p>
+                <div class="keyword-wrap">
+                  <span class="keyword">#SCSS</span>
+                  <span class="keyword">#Swiper</span>
+                  <span class="keyword">#Adaptive Web</span>
+                </div>
                 <div class="link-more-wrap">
-                  <a href="#" class="link-more btn">view project</a>
-                  <a href="#" class="link-more btn">view info</a>
+                  <a href="https://jeon-hyerin.github.io/wconcept_pc/" target="_blank" class="link-more btn">view pc</a>
+                  <a href="https://jeon-hyerin.github.io/wconcept/" target="_blank" class="link-more btn">view mobile</a>
+                  <a href="https://velog.io/@jeonhyelin/W-concept-pc-mobile" target="_blank" class="link-more btn">information</a>
+                </div>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="thumb-box thumb-dim">
+                <img src="./assets/images/content/work_seoul.jpg" alt="" />
+              </div>
+              <div class="info-box">
+                <h3 class="title">Seoul City Hall</h3>
+                <p class="desc ko">
+                  서울특별시청 공식사이트를 클론 코딩하였으며 키보드 접근성에 중점을 둔 PC 버전의 적응형 웹사이트입니다.
+                </p>
+                <div class="keyword-wrap">
+                  <span class="keyword">#Web Accessibility</span>
+                  <span class="keyword">#Slick</span>
+                  <span class="keyword">#Adaptive Web</span>
+                </div>
+                <div class="link-more-wrap">
+                  <a href="https://jeon-hyerin.github.io/site_seoul/" target="_blank" class="link-more btn">view project</a>
+                  <a href="https://velog.io/@jeonhyelin/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%EC%B2%AD" target="_blank" class="link-more btn">information</a>
+                </div>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="thumb-box thumb-dim">
+                <img src="./assets/images/content/work_naver.jpg" alt="" />
+              </div>
+              <div class="info-box">
+                <h3 class="title">NAVER</h3>
+                <p class="desc ko">
+                  네이버 공식사이트를 클론 코딩하였으며 시맨틱 마크업 구성에 중점을 둔 PC 버전의 적응형 웹사이트입니다.
+                </p>
+                <div class="keyword-wrap">
+                  <span class="keyword">#Web Accessibility</span>
+                  <span class="keyword">#IR/IS</span>
+                  <span class="keyword">#Adaptive Web</span>
+                </div>
+                <div class="link-more-wrap">
+                  <a href="#" target="_blank" class="link-more btn">view project</a>
+                  <a href="https://velog.io/@jeonhyelin/NAVER" target="_blank" class="link-more btn">information</a>
                 </div>
               </div>
             </li>

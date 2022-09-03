@@ -14,7 +14,7 @@ $(function(){
   load.addLabel('a')
   .fromTo('.title-box', {opacity: 0}, {opacity: 1},'a')
   .to('.page-load', {y: '-95vw'},'a+=1.5')
-  .to('.title-box', {opacity: 0, ease: Expo.easeOut}, 'a+=1.1')
+  .to('.title-box', {opacity: 0, ease: Power4.easeIn}, 'a+=1.1')
   .set('.page-load', {display: 'none'});
   load.play();
 
@@ -28,6 +28,12 @@ $(function(){
     const scrollTop = $('#' + dataMenu).offset().top;
     // $('.link-gnb').removeClass('selected');
     // $(this).addClass('selected');
+    $('html, body').animate({scrollTop: scrollTop}, 500);
+  });
+
+  // more view
+  $('.sc-about .link-more').click(function(){
+    const scrollTop = $('.sc-work').offset().top;
     $('html, body').animate({scrollTop: scrollTop}, 500);
   });
 

@@ -95,7 +95,17 @@ div[class*="inner"] {
   }
 
   @include tablet {
-    padding-left: 2em;
+    padding: {
+      left: 2em;
+      right: 2em;
+    }
+  }
+
+  @include mobile-medium {
+    padding: {
+      left: 1.5em;
+      right: 1.5em;
+    }
   }
 
   @include mobile-small {
@@ -124,4 +134,19 @@ div[class*="inner"] {
   margin-right: 0.5em;
   border-radius: 50%;
   background-color: #f9f9f9;
+}
+
+.thumb-dim {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .15);
+
+  }
 }
