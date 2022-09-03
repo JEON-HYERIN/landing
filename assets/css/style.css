@@ -152,7 +152,7 @@ body { font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; line-h
 
 .btn::after { content: ''; position: absolute; left: 0; bottom: 2px; width: 100%; height: 3px; background: #f9f9f9; -webkit-transition: .3s; transition: .3s; }
 
-.sc-visual { margin-top: 7.4em; margin-bottom: 7.5em; }
+.sc-visual { overflow: hidden; margin-top: 7.4em; margin-bottom: 7.5em; }
 
 @media (min-width: 1920px) { .sc-visual { margin-top: 9.37em; } }
 
