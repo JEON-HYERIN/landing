@@ -4,7 +4,7 @@ $(function(){
     e.preventDefault();
   });
 
-  // pre-load
+  // page-load
   const load = gsap.timeline({
     paused: true,
   })
@@ -35,8 +35,6 @@ $(function(){
     $('html, body').animate({scrollTop: scrollTop}, 500);
   });
 
-
-
   // cursor
   const mouseCursor = document.querySelector('.cursor');
 
@@ -53,6 +51,5 @@ $(function(){
   $('a').mouseleave(function(){
     $('.cursor').removeClass('border');
   });
-
 });
 
