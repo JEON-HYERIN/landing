@@ -482,7 +482,7 @@
   }
 }
 
-// pre-load
+// page-load
 .page-load {
   position: fixed;
   left: 0;
@@ -531,10 +531,6 @@
     font: {
       family: 'Roboto Condensed', sans-serif;
       size: 1.2em;
-    }
-
-    em {
-      font-family: 'Rl unno', sans-serif;
     }
 
     @include mobile-small {

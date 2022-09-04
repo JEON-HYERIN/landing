@@ -44,11 +44,6 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 
-    strong {
-      font-family: 'Rl unno', sans-serif;
-      margin-right: 2px;
-    }
-
     @include mobile-small {
       order: 3;
     }
@@ -56,6 +51,10 @@
     @include mobile-medium {
       font-size: 1.5em;
     }
+  }
+
+  .copyright-symbol {
+    margin-right: 2px;
   }
 
   .btn {
