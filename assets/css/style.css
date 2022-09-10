@@ -260,9 +260,11 @@ body { font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; line-h
 
 @media (max-width: 640px) { .sc-work .work-item { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
 
-.sc-work .work-item .thumb-box { position: relative; width: 45%; padding-bottom: 55%; display: -webkit-box; display: -ms-flexbox; display: flex; overflow: hidden; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; overflow: hidden; }
+.sc-work .work-item .thumb-box { position: relative; width: 45%; max-width: 686px; padding-bottom: 55%; display: -webkit-box; display: -ms-flexbox; display: flex; overflow: hidden; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; overflow: hidden; }
 
-@media (max-width: 640px) { .sc-work .work-item .thumb-box { width: 100%; padding-bottom: 138%; } }
+@media (max-width: 1200px) { .sc-work .work-item .thumb-box { max-width: 540px; } }
+
+@media (max-width: 640px) { .sc-work .work-item .thumb-box { width: 100%; max-width: none; padding-bottom: 130%; } }
 
 .sc-work .work-item .thumb-box:hover img { -webkit-transform: scale(1.1); transform: scale(1.1); }
 

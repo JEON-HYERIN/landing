@@ -327,7 +327,7 @@
     .thumb-box {
       position: relative;
       width: 45%;
-      // max-width: 686px;
+      max-width: 686px;
       padding-bottom: 55%;
       display: flex;
       overflow: hidden;
@@ -336,13 +336,13 @@
       overflow: hidden;
 
       @include desktop-small {
-        // max-width: 540px;
+        max-width: 540px;
       }
 
       @include mobile-medium {
         width: 100%;
-        // max-width: none;
-        padding-bottom: 138%;
+        max-width: none;
+        padding-bottom: 130%;
       }
 
       &:hover {
