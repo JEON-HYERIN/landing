@@ -325,21 +325,24 @@
     }
 
     .thumb-box {
+      position: relative;
+      width: 45%;
+      // max-width: 686px;
+      padding-bottom: 55%;
       display: flex;
       overflow: hidden;
       justify-content: center;
       align-items: center;
       overflow: hidden;
-      width: 45%;
-      max-width: 686px;
 
       @include desktop-small {
-        max-width: 540px;
+        // max-width: 540px;
       }
 
       @include mobile-medium {
         width: 100%;
-        max-width: none;
+        // max-width: none;
+        padding-bottom: 138%;
       }
 
       &:hover {
@@ -349,6 +352,12 @@
       }
 
       img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         transition: .5s;
       }
     }
