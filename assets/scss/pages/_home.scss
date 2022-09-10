@@ -365,8 +365,8 @@
     .info-box {
       position: relative;
       display: flex;
-      flex-wrap: wrap;
-      align-content: center;
+      flex-direction: column;
+      justify-content: center;
       width: 55%;
       max-width: 750px;
 
