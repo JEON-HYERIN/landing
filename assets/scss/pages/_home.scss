@@ -305,6 +305,7 @@
 
   .work-item {
     display: flex;
+    align-items: center;
     margin-top: 9.3em;
 
     &:nth-child(2n) {
@@ -329,10 +330,6 @@
       width: 45%;
       max-width: 686px;
       padding-bottom: 55%;
-      display: flex;
-      overflow: hidden;
-      justify-content: center;
-      align-items: center;
       overflow: hidden;
 
       @include desktop-small {
@@ -364,9 +361,6 @@
 
     .info-box {
       position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       width: 55%;
       max-width: 750px;
 
@@ -376,7 +370,6 @@
       }
 
       @include mobile-medium {
-        flex-direction: column;
         width: 100%;
         max-width: none;
       }
