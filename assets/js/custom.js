@@ -46,17 +46,17 @@ $(function(){
   const year = new Date().getFullYear();
   $('.year').text(year);
 
-  // link gnb click!
-  $('.link-gnb').click(function(){
+  // gnb click!
+  $('.btn-gnb').click(function(){
     const dataMenu = $(this).parent().data('menu');
     const scrollTop = $('#' + dataMenu).offset().top;
-    // $('.link-gnb').removeClass('selected');
+    // $('.btn-gnb').removeClass('selected');
     // $(this).addClass('selected');
     $('html, body').animate({scrollTop: scrollTop}, 500);
   });
 
-  // more view
-  $('.sc-about .link-more').click(function(){
+  // btn-scroll
+  $('.sc-about .btn-scroll').click(function(){
     const scrollTop = $('.sc-work').offset().top;
     $('html, body').animate({scrollTop: scrollTop}, 500);
   });
